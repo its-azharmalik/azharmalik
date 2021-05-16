@@ -54,7 +54,7 @@
                 <div class="more-projects">
                     <div class="wrap">
                         <div class="wrap_float">
-                            <a class="cases-link" href="contact.html" data-text="All projects"><span>Get in Touch</span></a>
+                            <a class="cases-link" href="#contact" data-text="All projects"><span>Get in Touch</span></a>
                         </div>
                     </div>
                 </div>
@@ -147,14 +147,14 @@
                     </div>
                 </div>
             </div>
-            <form action="" class="contact-form">
+            <form name="contact" method="POST" data-netlify="true" class="contact-form" id="contact">
                 <div class="write-comment">
 
                     <div class="fields">
-                        <input type="text" class="input" placeholder="Name">
-                        <input type="email" class="input" placeholder="E-mail">
-                        <textarea class="input textarea" placeholder="Message"></textarea>
-                        <button class="submit">Send Message</button>
+                        <input type="text" class="input" placeholder="Name" name="name">
+                        <input type="email" class="input" placeholder="E-mail" name="email">
+                        <textarea class="input textarea" placeholder="Message" name="message"></textarea>
+                        <button class="submit" type="submit">Send Message</button>
                     </div>
                 </div>
             </form>
